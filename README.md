@@ -7,7 +7,7 @@ Yii2-user can be installed using composer. Run following command to download and
 install Yii2-user:
 
 ```bash
-composer require garzoli/yii2-add-body-class
+composer require garazol/yii2-add-body-class
 ```
 
 ### 2. Configure
@@ -16,7 +16,7 @@ In the base controller place the behavior definition:
 
 ```php
 // reference to the behavior class:
-use garzoli\addBodyClass\components\BodyClassBehavior;
+use garazol\addBodyClass\components\BodyClassBehavior;
 
 // add body class behavior configuration to the behaviors method:
     /**
