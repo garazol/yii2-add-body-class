@@ -51,7 +51,7 @@ In the layout template you can render the composed body classes:
 ```php
 <body class="<?= Html::encode($this->context->renderBodyClasses()); ?>">
 ```
-In any controller (which is extended from the base controller or ) you can add extra classes to body easily, just use: 
+In any controller (which is extended from the base controller and inherits the behavior) you can add extra classes to body easily, just use: 
 ```php
 public function actionExample()
 {
