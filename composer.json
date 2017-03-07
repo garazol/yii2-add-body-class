@@ -1,0 +1,34 @@
+{
+  "name": "garazol/yii2-add-body-class",
+  "description": "YII2 component which allows us to assign CSS classes to HTML body element easily",
+  "keywords": [
+    "yii2",
+    "yii2-add-body-class",
+    "garazol"
+  ],
+  "type": "yii2-component",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/garazol/yii2-add-body-class/issues?state=open",
+    "source": "https://github.com/garazol/yii2-add-body-class"
+  },
+  "authors": [
+    {
+      "name": "garazol"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": "^2.0.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-codeception": "^2.0.0",
+    "codeception/specify": "^0.4.3",
+    "codeception/verify": "^0.3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "garazol\\yii2-add-body-class\\": ""
+    }
+  }
+}
