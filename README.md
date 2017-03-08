@@ -65,3 +65,4 @@ public function actionExample()
     $this->removeBodyClass(['example', 'something']);
 }
 ```
+[For real example see](docs/example.md)
