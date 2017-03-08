@@ -151,7 +151,7 @@ class BodyClassBehavior extends Behavior
      *
      * @return string
      */
-    protected function autoGenerateUserLoggedIn()
+    protected function autoGenerateUserLoggedStatus()
     {
         return 'user-logged-' . (Yii::$app->getUser()->getIsGuest() ? 'out' : 'in');
     }
