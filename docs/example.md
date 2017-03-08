@@ -5,7 +5,7 @@ file: components/BaseController.php
 ```php
 <?php
 use yii\web\Controller;
-use garazol\addBodyClass\components\BodyClassBehavior;
+use garazol\yii2AddBodyClass\components\behaviors\BodyClassBehavior;
 
 /**
  * Class BaseController
@@ -48,7 +48,7 @@ file: controllers/ExampleController.php
 
 use components\BaseController;
 use yii\filters\AccessControl;
-use garazol\addBodyClass\components\BodyClassBehavior;
+use garazol\yii2AddBodyClass\components\behaviors\BodyClassBehavior;
 
 /**
  * Class ProfileController

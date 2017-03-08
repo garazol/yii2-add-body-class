@@ -1,6 +1,6 @@
 <?php
 
-namespace garazol\addBodyClass\components;
+namespace garazol\yii2AddBodyClass\components\behaviors;
 
 use Yii;
 use yii\base\Behavior;

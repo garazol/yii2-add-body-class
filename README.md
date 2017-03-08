@@ -18,7 +18,7 @@ In the base controller place the behavior definition:
 
 ```php
 // reference to the behavior class:
-use garazol\addBodyClass\components\BodyClassBehavior;
+use garazol\yii2AddBodyClass\components\behaviors\BodyClassBehavior;
 
 // add body class behavior configuration to the behaviors method:
 /**
@@ -65,4 +65,4 @@ public function actionExample()
     $this->removeBodyClass(['example', 'something']);
 }
 ```
-[For real example see](docs/example.md)
+[For real example see this example code.](docs/example.md)

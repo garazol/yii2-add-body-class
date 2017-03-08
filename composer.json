@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "garazol\\yii2-add-body-class\\": ""
+      "garazol\\yii2AddBodyClass\\": ""
     }
   }
 }
