@@ -89,6 +89,10 @@ class BodyClassBehavior extends Behavior
      */
     public function addBodyClass($class)
     {
+        if (empty($class)) {
+            return $this;
+        }
+
         foreach ((array) $class as $value) {
             $this->bodyClasses[] = $value;
         }
@@ -163,10 +167,15 @@ class BodyClassBehavior extends Behavior
      */
     protected function autoGenerateControllerAction()
     {
-        return [
-            'controller-' . Inflector::slug(Yii::$app->controller->id),
-            'action-' . Inflector::slug(Yii::$app->controller->action->id),
-        ];
+        $classes = [];
+        if (isset(Yii::$app->controller)) {
+            $classes[] = 'controller-' . Inflector::slug(Yii::$app->controller->id);
+        }
+        if (isset(Yii::$app->controller->action)) {
+            $classes[] = 'action-' . Inflector::slug(Yii::$app->controller->action->id);
+        }
+
+        return $classes;
     }
 
     /**
@@ -176,6 +185,10 @@ class BodyClassBehavior extends Behavior
      */
     protected function autoGenerateModule()
     {
-        return 'module-' . Inflector::slug(Yii::$app->controller->module->id);
+        if (isset(Yii::$app->controller->module)) {
+            return 'module-' . Inflector::slug(Yii::$app->controller->module->id);
+        }
+
+        return '';
     }
 }
